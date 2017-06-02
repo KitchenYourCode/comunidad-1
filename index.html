@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Municipalidad de lavalle</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-light" style="background-color: #F5A523;">
+	<div class="row">
+		<div class="col col-sm-1">
+			<a class="navbar-brand" href="#">Logo</a>
+		</div>
+		<div class="col-sm-3 push-4">
+			<a class="navbar-brand" href="#">Municipalidad de lavalle</a>
+		</div>
+	</div>
+</nav>
+<div class="container" style="margin-top:100px;">
+  <div class="row" >
+    <div class="col-sm-2 push-5 align-self-center" >
+     <input type="text" name="email" id="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="row" >
+    <div class="col-sm-2 push-5 align-self-center" >
+     <input type="password" name="password" id="password" placeholder="Password">
+    </div>
+  </div>
+    <div class="row" >
+    <div class="col-sm-2 push-5 align-self-center" >
+     <button class="btn btn-secondary" id="btnLogin">Iniciar sesión</button>
+    </div>
+  </div>
+    <div class="row" >
+    <div class="col-sm-2 push-5 align-self-center" >
+     <button class="btn btn-secondary" id="btnSingUp">Crear cuenta</button>
+    </div>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyAwX13JGbMifQBJY3beaSic3Ejj-4Up2vQ",
+    authDomain: "comunidad-41ce3.firebaseapp.com",
+    databaseURL: "https://comunidad-41ce3.firebaseio.com",
+    projectId: "comunidad-41ce3",
+    storageBucket: "comunidad-41ce3.appspot.com",
+    messagingSenderId: "483625482498"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
