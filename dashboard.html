@@ -41,9 +41,7 @@
     <iframe
   
   height="180"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDXwrgz9MVf2wmkjFQWXkmcJ_bTAqJTgTg
-    &q=-32.888571, -68.848855" allowfullscreen>
+  frameborder="0" style="border:0" allowfullscreen>
 </iframe>
     <div class="card-block">
       <h4 class="card-title" id="titulo"></h4>
@@ -65,9 +63,7 @@
     <iframe
   
   height="180"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDXwrgz9MVf2wmkjFQWXkmcJ_bTAqJTgTg
-    &q=-32.888571, -68.848855" allowfullscreen>
+  frameborder="0" style="border:0" allowfullscreen>
 </iframe>
     <div class="card-block">
       <h4 class="card-title" id="titulo_card"></h4>
@@ -98,12 +94,9 @@ document.querySelector('iframe').setAttribute('width', document.querySelector('.
 document.querySelector('#ver').addEventListener('click', e=>{
   document.querySelector('#hidden').classList.remove("hidden-xs-up");
 });
-//document.querySelector('#panel').style.height = window.innerHeight+"px";
-  //document.querySelector('#panel').style.height = screen.height+"px";
 </script>
 <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 <script>
-  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAwX13JGbMifQBJY3beaSic3Ejj-4Up2vQ",
     authDomain: "comunidad-41ce3.firebaseapp.com",
@@ -120,9 +113,9 @@ document.querySelector('#ver').addEventListener('click', e=>{
     titulo.innerHTML = snap.val().titulo;
     descripcion.innerHTML = snap.val().descripcion;
     document.getElementById('titulo_card').innerHTML = snap.val().titulo;
-    //document.getElementById('descripcion_card').innerHTML = snap.val().descripcion;
     document.getElementById('usuario_card').innerHTML = snap.val().responsable;
-    document.getElementById('img_card').setAttribute('src', snap.val().img) ;
+    document.getElementById('img_card').setAttribute('src', snap.val().img);
+    document.querySelector('iframe').setAttribute('src', 'https://www.google.com/maps/embed/v1/place?key=AIzaSyDXwrgz9MVf2wmkjFQWXkmcJ_bTAqJTgTg&q='+snap.val().coordenadas)
   });
 </script>
 </body>
