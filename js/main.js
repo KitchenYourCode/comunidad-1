@@ -18,7 +18,7 @@
 	AUTH.onAuthStateChanged(firebaseUser =>{
     if (firebaseUser) {
       console.log(firebaseUser);
-      //window.location.href = "dashboard.html";
+      window.location.href = "dashboard.html";
     }
     else{
       alert("No logeado");
